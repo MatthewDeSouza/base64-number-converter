@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css" id="theme">
+    <title>Number Converter</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="base64.html">Base64</a>
+        <a class="active" href="converter.html">Number Converter</a>
+        <a href="faq.html">About</a>
+        <button onclick="switchTheme()"><img id="icon" src="images/moon.png"></button>
+        <script src="scripts/main.js"></script>
+    </div>
+
+    <div class="converter-main-context">
+        <p style="font-size: 20pt; color: #1e1e2e; padding-bottom: 0px;">Number Converter</p>
+        <p style="font-size: 12pt; color: #1e1e2e; padding-top: 0px;">Utilize <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#numeric_literals">numeric literals </a>for input type!</p>
+        <textarea id="input"></textarea>
+        <textarea id="output" readonly></textarea>
+        <div>
+            <form>
+                <legend>
+                    <input type="radio" id="binary" name="opt" value="binary" checked/>
+                    <label for="binary">Binary</label>
+
+                    <input type="radio" id="octal" name="opt" value="octal"/>
+                    <label for="octal">Octal</label>
+
+                    <input type="radio" id="decimal" name="opt" value="decimal"/>
+                    <label for="decimal">Decimal</label>
+
+                    <input type="radio" id="hex" name="opt" value="hex"/>
+                    <label for="hex">Hex</label>
+                </legend>
+            </form>
+        </div>
+        <div>
+            <form>
+                <button id="submit" type="button" name="submit" onclick="convertDec()">Convert</button>
+                <script src="scripts/main.js"></script>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p style="text-align: center;">Made with 💜 for Per Scholas</p>
+    </footer>
+</body>
+</html>
